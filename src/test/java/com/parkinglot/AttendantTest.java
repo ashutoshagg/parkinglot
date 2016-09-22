@@ -111,7 +111,7 @@ public class AttendantTest {
 		attendant.park(new Car("3"));
 
 		//then
-		assertEquals(3, parkingLot2.freeSpace());
+		assertEquals(4, parkingLot2.freeSpace());
 	}
 	
 	
