@@ -16,8 +16,9 @@ public class CarOwner {
 	}
 
 	public void park(Car car) {
-		Collections.sort(this.parkingLots, strategyComparator);
-		parkingLots.get(0).park(car);
+		//Collections.sort(this.parkingLots, strategyComparator);
+		//parkingLots.get(0).park(car);
+		parkingLots.stream().sorted(strategyComparator).findFirst().get().park(car);
 		
 	}
 	
